@@ -8,7 +8,7 @@ pipeline{
         }
         stage("MVN Build"){
             steps{
-                start cmd /k "mvn clean install"
+                cmd "mvn clean install"
             }
         }
     }
